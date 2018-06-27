@@ -7,7 +7,7 @@ class DCMService(helpers.Service):
     _SCOPES = ("https://www.googleapis.com/auth/dfatrafficking", "https://www.googleapis.com/auth/dfareporting",
                "https://www.googleapis.com/auth/ddmconversions")
     _SERVICE_NAME = "dfareporting"
-    _SERVICE_VERSION = "v3.0"
+    _SERVICE_VERSION = "v3.1"
 
     def reports(self, *args, **kwargs):
         return Reports(self._service.reports(*args, **kwargs))
